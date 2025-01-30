@@ -6,8 +6,38 @@
           <title>Document</title>
      </head>
      <body>
+
           <header>
-               <h1>Hello World!</h1>
+               <h1>Welcome!</h1>
           </header>
+
+          <form action="send-form" method="post">
+
+               <fieldset>
+
+                    <legend>Appointment Form</legend>
+
+                    <label>First Name:
+                         <input type="text" name="fname">
+                    </label>
+
+                    <label>Last Name:
+                         <input type="text" name="lname">
+                    </label>
+
+                    <label>Date:
+                         <input type="date" name="appt-date">
+                    </label>
+
+                    <label>Time:
+                         <input type="time" name="appt-time">
+                    </label>
+
+               </fieldset>
+
+               <button type="submit">Set Appointment</button>
+               
+          </form>
+
      </body>
 </html>
