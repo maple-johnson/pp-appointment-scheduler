@@ -17,6 +17,10 @@ app.post('/send-form', (req, res) => {
     res.send(`<h1>Confirmed! See you then ${req.body.fname}!</h1>`);
 });
 
+app.get('/admin/appointments', (req, res) => {
+     res.send(apptList);
+});
+
 app.listen(PORT, () => {
     console.log(`Servers running at http://localhost:${PORT}`);
 });
